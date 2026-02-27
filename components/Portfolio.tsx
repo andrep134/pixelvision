@@ -24,7 +24,7 @@ export default function Portfolio() {
       <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
         <div>
           <p className="text-sm uppercase tracking-[0.4em] text-brand-muted">Portfolio</p>
-          <h3 className="font-heading text-5xl uppercase">Signature Frames & Films</h3>
+          <h3 className="font-heading text-3xl uppercase sm:text-4xl md:text-5xl">Signature Frames & Films</h3>
         </div>
         <div className="flex gap-2 rounded-full border border-white/10 bg-brand-surface/70 p-1">
           {filters.map((item) => (
@@ -86,15 +86,15 @@ export default function Portfolio() {
               initial={{ scale: 0.92, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.96, opacity: 0 }}
-              className="relative w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10 bg-brand-surface"
+              className="relative max-h-[90vh] w-full max-w-3xl overflow-auto rounded-3xl border border-white/10 bg-brand-surface"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative h-80 w-full">
+              <div className="relative h-56 w-full sm:h-80">
                 <Image src={active.image} alt={active.title} fill className="object-cover" />
               </div>
               <div className="space-y-3 p-6">
                 <p className="text-xs uppercase tracking-[0.3em] text-brand-red">{active.category}</p>
-                <h4 className="font-heading text-5xl uppercase">{active.title}</h4>
+                <h4 className="font-heading text-3xl uppercase sm:text-5xl">{active.title}</h4>
                 <p className="text-brand-muted">{active.description}</p>
               </div>
             </motion.div>
