@@ -8,7 +8,7 @@ export default function Footer() {
           <Image src="/assets/pixelvisionlogo.png" alt="PixelVision logo" fill className="object-contain" />
         </a>
 
-        <div className="flex items-center gap-6 text-sm uppercase tracking-[0.2em] text-brand-muted">
+        <div className="flex flex-col items-center gap-3 text-center text-xs uppercase tracking-[0.2em] text-brand-muted sm:flex-row sm:gap-6 sm:text-sm">
           <a href="https://instagram.com" target="_blank" className="link-underline" rel="noreferrer">
             Instagram
           </a>

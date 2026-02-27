@@ -30,9 +30,9 @@ export default function Booking() {
   return (
     <section id="booking" className="mx-auto w-full max-w-4xl px-6 py-24 md:px-8">
       <p className="text-sm uppercase tracking-[0.4em] text-brand-muted">Booking</p>
-      <h3 className="font-heading text-5xl uppercase">Book Your Cinematic Session</h3>
+      <h3 className="font-heading text-3xl uppercase sm:text-4xl md:text-5xl">Book Your Cinematic Session</h3>
 
-      <div className="mt-8 rounded-2xl border border-white/10 bg-brand-surface/80 p-8 shadow-card">
+      <div className="mt-8 rounded-2xl border border-white/10 bg-brand-surface/80 p-5 shadow-card sm:p-8">
         {!submitted ? (
           <>
             <div className="mb-8">
@@ -104,7 +104,7 @@ export default function Booking() {
                 />
               )}
 
-              <div className="flex justify-between pt-4">
+              <div className="flex flex-wrap justify-between gap-3 pt-4">
                 <button
                   type="button"
                   onClick={() => setStep((prev) => Math.max(0, prev - 1))}
@@ -125,7 +125,7 @@ export default function Booking() {
         ) : (
           <div className="rounded-2xl border border-brand-red/40 bg-black/30 p-8 text-center">
             <p className="text-sm uppercase tracking-[0.4em] text-brand-red">Confirmed</p>
-            <h4 className="mt-2 font-heading text-5xl uppercase">You&apos;re Booked</h4>
+            <h4 className="mt-2 font-heading text-3xl uppercase sm:text-5xl">You&apos;re Booked</h4>
             <p className="mx-auto mt-4 max-w-lg text-brand-muted">
               Thanks {form.name || "Athlete"}! PixelVision will contact you at {form.email || "your email"} to finalize
               creative direction and schedule.

@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <section id="services" className="mx-auto w-full max-w-7xl px-6 py-24 md:px-8">
       <p className="text-sm uppercase tracking-[0.4em] text-brand-muted">Services</p>
-      <h3 className="font-heading text-5xl uppercase">Premium Packages</h3>
+      <h3 className="font-heading text-3xl uppercase sm:text-4xl md:text-5xl">Premium Packages</h3>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-3">
         {services.map((service) => (
